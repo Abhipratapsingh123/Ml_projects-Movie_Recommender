@@ -16,7 +16,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 similarity = cosine_similarity(vectors)
 
 # ttle of the web site
-st.title("Movie Recommender System")
+st.title("Similar Movies Recommender")
 
 selected_movie_name = st.selectbox('Which movie you want to see', movies['title'].values)
 
