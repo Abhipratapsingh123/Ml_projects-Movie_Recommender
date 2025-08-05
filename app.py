@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 import requests
 
-st.set_page_config(page_title="Beta Columns UI", layout="wide")
+st.set_page_config(page_title="Movie Recommender", layout="wide")
 
 st.markdown(
     """
@@ -12,7 +12,7 @@ st.markdown(
             font-size: 50px;
             font-weight: bold;
             margin-bottom: 20px;
-             text-align: center;
+            text-align: center;
             color: #1F4E79;
         }
         .beta-title {
