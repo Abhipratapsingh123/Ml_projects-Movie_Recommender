@@ -52,7 +52,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 similarity = cosine_similarity(vectors)
 
 # ttle of the web site
-st.markdown('<div class="Next Watch">Beta Comparison</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">Next Watch</div>', unsafe_allow_html=True)
 
 selected_movie_name = st.selectbox('Which movie you want to see', movies['title'].values)
 
