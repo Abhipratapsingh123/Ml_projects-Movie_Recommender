@@ -74,25 +74,23 @@ def recommend(movie):
 
 
 if st.button("Recommend"):
-    names, posters = recommend(selected_movie_name)
+    if selected_movie_name in movies['title'].values:
+        names, posters = recommend(selected_movie_name)
 
-    # Use spacing between elements and maintain uniform image size
-    col1, col2, col3, col4, col5 = st.columns(5, gap="medium")
+        col1, col2, col3, col4, col5 = st.columns(5, gap="medium")
 
-    with col1:
-        st.image(posters[0], use_column_width=True, caption=names[0])
-
-    with col2:
-        st.image(posters[1], use_column_width=True, caption=names[1])
-
-    with col3:
-        st.image(posters[2], use_column_width=True, caption=names[2])
-
-    with col4:
-        st.image(posters[3], use_column_width=True, caption=names[3])
-
-    with col5:
-        st.image(posters[4], use_column_width=True, caption=names[4])
+        with col1:
+            st.image(posters[0], use_column_width=True, caption=names[0])
+        with col2:
+            st.image(posters[1], use_column_width=True, caption=names[1])
+        with col3:
+            st.image(posters[2], use_column_width=True, caption=names[2])
+        with col4:
+            st.image(posters[3], use_column_width=True, caption=names[3])
+        with col5:
+            st.image(posters[4], use_column_width=True, caption=names[4])
+    else:
+        st.warning("No movie in database")
 
 # Add vertical space before Reset button
 st.markdown("###")
