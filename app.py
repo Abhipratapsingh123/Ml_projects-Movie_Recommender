@@ -50,23 +50,23 @@ if st.button("Recommend"):
     # Add content to each column
     with col1:
         st.header(names[0])
-        st.write(posters[0])
+        st.image(posters[0])
 
     with col2:
         st.header(names[1])
-        st.write(posters[1])
+        st.image(posters[1])
 
     with col3:
         st.header(names[2])
-        st.write(posters[2])
+        st.image(posters[2])
     
     with col4:
         st.header(names[3])
-        st.write(posters[3])
+        st.image(posters[3])
     
     with col5:
         st.header(names[4])
-        st.write(posters[4])
+        st.image(posters[4])
 
 st.button("Reset", type="primary")
 
