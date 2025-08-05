@@ -9,13 +9,14 @@ st.markdown(
     """
     <style>
         .main-title {
-            font-size: 30px;
+            font-size: 50px;
             font-weight: bold;
             margin-bottom: 20px;
+             text-align: center;
             color: #1F4E79;
         }
         .beta-title {
-            font-size: 22px;
+            font-size: 32px;
             font-weight: bold;
             margin-bottom: 10px;
         }
@@ -54,7 +55,7 @@ similarity = cosine_similarity(vectors)
 # ttle of the web site
 st.markdown('<div class="main-title">Next Watch</div>', unsafe_allow_html=True)
 
-selected_movie_name = st.selectbox('Which movie you want to see', movies['title'].values)
+selected_movie_name = st.selectbox('Pick a movie and discover 5 others you might also enjoy', movies['title'].values)
 
 
 def recommend(movie):
